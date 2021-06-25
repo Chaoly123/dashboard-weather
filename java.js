@@ -17,10 +17,17 @@ function searchCity(city) {
         .then(function (data) {
             console.log(data)
             console.log(data.main.temp)
+            // <div class="current">
             // <h1 id="cityName"></h1>
             // <h2 id="temp">Temperature</h>
             // <h3 id="wind">Wind</h3>
             // <h4 id="humid">Humidity</h4>
+            var newRow = document.createElement("div")
+            newRow.setAttribute("class", "row")
+            for (let i = 0; i < array.length; i++) {
+                const element = array[i];
+                
+            }
             document.getElementById("cityName", "date").textContent = data.name + data.timezone
             document.getElementById("temp").textContent = data.main.temp + " " + "F"
             document.getElementById("wind").textContent = data.wind.speed + " " + "MPH"
