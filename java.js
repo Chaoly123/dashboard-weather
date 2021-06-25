@@ -21,7 +21,7 @@ function searchCity(city) {
             // <h2 id="temp">Temperature</h>
             // <h3 id="wind">Wind</h3>
             // <h4 id="humid">Humidity</h4>
-            document.getElementById("cityName").textContent = data.name
+            document.getElementById("cityName", "date").textContent = data.name + data.timezone
             document.getElementById("temp").textContent = data.main.temp + " " + "F"
             document.getElementById("wind").textContent = data.wind.speed + " " + "MPH"
             document.getElementById("humid").textContent = data.main.humidity + " " + "%"
