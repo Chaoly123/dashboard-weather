@@ -24,11 +24,12 @@ function searchCity(city) {
             // <h4 id="humid">Humidity</h4>
             var newRow = document.createElement("div")
             newRow.setAttribute("class", "row")
-            for (let i = 0; i < array.length; i++) {
-                const element = array[i];
+            // for (let i = 0; i < array.length; i++) {
+            //     const element = array[i];
                 
-            }
-            document.getElementById("cityName", "date").textContent = data.name + data.timezone
+            
+            document.getElementById("cityName", "date").textContent = data.name 
+            // + data.timezone
             document.getElementById("temp").textContent = data.main.temp + " " + "F"
             document.getElementById("wind").textContent = data.wind.speed + " " + "MPH"
             document.getElementById("humid").textContent = data.main.humidity + " " + "%"
