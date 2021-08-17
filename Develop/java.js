@@ -26,9 +26,9 @@ function searchCity(city) {
             newRow.setAttribute("class", "row")
             // for (let i = 0; i < array.length; i++) {
             //     const element = array[i];
-                
-            
-            document.getElementById("cityName", "date").textContent = data.name 
+
+
+            document.getElementById("cityName", "date").textContent = data.name
             // + data.timezone
             document.getElementById("temp").textContent = data.main.temp + " " + "F"
             document.getElementById("wind").textContent = data.wind.speed + " " + "MPH"
@@ -41,6 +41,9 @@ function searchCity(city) {
         .then(response => response.json())
         .then(data => {
             console.log(data)
+      
+
+                
             var noonArr = data.list.filter(index => index.dt_txt.includes("12:00"))
             console.log(noonArr)
 
